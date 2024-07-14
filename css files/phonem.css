@@ -1,0 +1,50 @@
+/* body{
+    background-color: darkgreen;
+} */
+.homeheading {
+    font-size: 4rem;
+}
+.homepara {
+    font-size: 25px;
+}
+.cardimg img {
+    height: 150px;
+    width: 200px;
+}
+.cardcontenthead h3 {
+    font-size: 2.1rem;
+}
+#servicecontainer p {
+    padding: 10px 80px;
+}
+#services {
+    height: 95vh;
+
+}
+#servicecontainer h1 {
+    padding-top: 70px;
+    font-size: 4rem;
+}
+#services::before {
+   height: 95vh;
+}
+#contact {
+    height: 95vh;
+}
+#contact::before {
+    height: 95vh;
+}
+.cardcontentbody {
+    padding: 10px 30px;
+    font-size: 15px;
+}
+.conhead {
+    font-size: 3.5rem;
+    margin-top: 50px;
+}
+.conbody form input {
+    width: 300px;
+}
+.conbody form textarea {
+    width: 300px;
+}

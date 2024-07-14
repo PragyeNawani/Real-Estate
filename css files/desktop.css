@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* font-size: 15px; */
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Header Section */
+/* Header: Navigation */
+.navbar{
+    top: 0;
+    position: sticky;
+    color: white;
+    display: flex;
+}
+.navbar::before{
+    background-color:rgb(3, 6, 41);
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+/* Header: Navigation Logo */
+.logo{
+    margin: 15px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+    border: 1px solid wheat;
+    border-radius: 50px;
+}
+/* Header: Navigation List  */
+.navlist{
+    list-style: none;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.navlist li a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 15px 20px;
+    border-width: 0px;
+    border-radius: 15px;
+}
+.navlist li a:hover{
+    text-decoration: none;
+    font-size: 20px;
+    color: aquamarine;
+    background-color:rgb(3, 6, 41);
+}
+/* Header: Navigation Search Area */
+.navright{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* text-align: right; */
+    width: 55%;
+    padding-top: 0px;
+    padding-right: 10px;
+}
+.navright input{
+    margin: 0px 10px;
+    padding: 5px;
+    font-size: 15px;
+    width: 50%;
+    border-width: 0;
+    border-radius: 15px;
+    outline: none;
+    text-align: center;
+    font-style: italic;
+}
+.btnnavsearch{
+    border: 2px solid whitesmoke;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    background: none;
+    width: 80px;
+}
+.btnnavsearch:hover{
+    border: 2px solid whitesmoke;
+    color: black;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: white;
+    width: 80px;
+}
+.hamb{
+    display: none;
+    width: 30px;
+}
+.ham{
+    right: 5px;
+    height: 0;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 5px 0px;
+    width: 27px;
+}
+
+/* Home Section  */
+#home{
+    color: whitesmoke;
+    height: 800px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#home::before{
+    position: absolute;
+    content: "";
+    background: url("../Img/chicago-1791002_640.jpg") no-repeat center center/cover;
+    /* top: 0;
+    left: 0; */
+    height: 800px;
+    width: 100%;
+    z-index: -2;
+}
+#homecontainer{
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.homeheading{
+    color:rgb(86, 249, 255);
+    font-size: 6rem;
+    text-align: center;
+    margin: 20px 0px;
+}
+.homepara{
+    color: #b0ebfb;
+    font-size: 30px;
+    margin: 40px 0px;
+    padding: 0px 0px;
+    text-align: center;
+}
+/* .homescroll{
+    padding: 3px;
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 2px solid blueviolet;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+} */
+/* Property Section  */
+#propertiescontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+    width: 100%;
+}
+.propertycards{
+    border: 2px solid brown;
+    border-radius: 20px;
+    height: 300px;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(249, 219, 181, 0.823);
+    
+}
+.propertycards:nth-child(even){
+    margin: 20px 20px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    height: 300px;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.cardimg img{
+    box-shadow: 0px 0px 10px 3px rgb(45, 1, 1);
+    border-radius: 40px;
+    height: 250px;
+    width: 400px;
+    margin: 0px 40px;
+}
+.cardcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cardcontenthead h3{
+    color: rgb(123, 27, 27);
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 3rem;
+}
+.cardcontentbody{
+    color: rgb(185, 60, 60);
+    padding: 10px 80px;
+    font-size: 20px;
+    padding-right: 60px;
+}
+/* Service Section  */
+#services{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.414);
+}
+#services::before{
+    position: absolute;
+    content: "";
+    background: url('../Img/services.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#servicecontainer h1{
+    color: hotpink;
+    text-shadow: 0px 0px 5px black;
+    padding: 30px 0px;
+    padding-top: 140px;
+    font-size: 5rem;
+}
+#servicecontainer p{
+    color: rgb(231, 157, 182);
+    text-shadow: 0px 0px 10px black;
+    padding: 10px 200px;
+    font-size: 1.5rem;
+}
+/* Contact Section  */
+#contact{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.114);
+}
+#contact::before{
+    content: "";
+    background: url('../Img/contact.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.contactcontainer{
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conhead{
+    font-size: 5rem;
+    margin-bottom: 20px;
+    margin-top: 120px;
+    color: gold;
+    text-shadow: 0px 0px 5px black;
+}
+.conbody form{
+    text-align: center;
+    font-size: 30px;
+    color: khaki;
+    text-shadow: 0px 0px 5px black;
+}
+.conbody form div{
+    margin: 5px 0px;
+}
+.conbody form input{
+    outline: none;
+    border-width: 1px;
+    border-radius: 10px;
+    width: 400px;
+    padding: 5px;
+    font-size: 15px;
+}
+.conbody form textarea{
+    height: 100px;
+    width: 400px;
+    padding: 5px;
+    font-size: 15px;
+    outline: none;
+}
+/* Footer  */
+#footer{
+    padding: 5px 10px;
+    height: auto;
+    background-color: black;
+    color: greenyellow;
+}
+/* Utility classes */
+.center{
+    text-align: center;
+}
